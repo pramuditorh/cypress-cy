@@ -1,0 +1,27 @@
+{
+  "name": "cypress-cy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run --reporter mochawesome --reporter-options reportDir=\"cypress/results\",overwrite=false,html=false,json=true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pramuditorh/cypress-cy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pramuditorh/cypress-cy/issues"
+  },
+  "homepage": "https://github.com/pramuditorh/cypress-cy#readme",
+  "devDependencies": {
+    "cypress": "^10.3.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.2.0"
+  }
+}
