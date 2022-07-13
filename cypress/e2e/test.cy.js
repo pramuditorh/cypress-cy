@@ -13,4 +13,10 @@ describe('test coba boca', () => {
         cy.get('#password').type('Dragneel1234')
         cy.get('.btn').click()
     })
+
+    it('google video 2', () => {
+        cy.visit('https://google.com')
+        cy.get('.gLFyf').type('dota 2 the international best moment{enter}')
+        cy.contains('Video').click()
+    })
 })

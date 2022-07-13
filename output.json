@@ -1,15 +1,15 @@
 {
   "stats": {
     "suites": 2,
-    "tests": 3,
-    "passes": 2,
+    "tests": 4,
+    "passes": 3,
     "pending": 0,
     "failures": 1,
-    "start": "2022-07-11T11:38:41.992Z",
-    "end": "2022-07-11T11:39:56.559Z",
-    "duration": 67019,
-    "testsRegistered": 3,
-    "passPercent": 66.66666666666667,
+    "start": "2022-07-13T07:51:20.694Z",
+    "end": "2022-07-13T07:52:44.356Z",
+    "duration": 74813,
+    "testsRegistered": 4,
+    "passPercent": 75,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "6aec15d3-2938-4e3c-94f7-c239bb4e0148",
+      "uuid": "5044d3fc-9ffe-4cd2-98be-83b8819a6f0e",
       "title": "",
       "fullFile": "cypress/e2e/spec.cy.js",
       "file": "cypress/e2e/spec.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "b1aaabc7-3d8d-4b56-8ca8-5f0cb98256be",
+          "uuid": "bbea344b-3e84-42c6-a515-8670a0f79598",
           "title": "empty spec",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "passes",
               "fullTitle": "empty spec passes",
               "timedOut": null,
-              "duration": 1953,
+              "duration": 1945,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit('https://example.cypress.io');",
               "err": {},
-              "uuid": "dae2be55-3dcf-4f3a-91ab-866ae3d440ad",
-              "parentUUID": "b1aaabc7-3d8d-4b56-8ca8-5f0cb98256be",
+              "uuid": "aba6f276-dacc-4382-8d8b-7a1130f027f9",
+              "parentUUID": "bbea344b-3e84-42c6-a515-8670a0f79598",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "dae2be55-3dcf-4f3a-91ab-866ae3d440ad"
+            "aba6f276-dacc-4382-8d8b-7a1130f027f9"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1953,
+          "duration": 1945,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -76,7 +76,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "b92c69a7-dd1f-4f94-8106-f53d7b1cafe6",
+      "uuid": "4143ac46-6eac-498d-843a-9d7f967a8e53",
       "title": "",
       "fullFile": "cypress/e2e/test.cy.js",
       "file": "cypress/e2e/test.cy.js",
@@ -85,7 +85,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "ee1fc06e-6fd5-43e2-b490-0d191089b554",
+          "uuid": "7d4db2b6-092b-418a-8bfe-845d3c302b51",
           "title": "test coba boca",
           "fullFile": "",
           "file": "",
@@ -96,17 +96,17 @@
               "title": "google video",
               "fullTitle": "test coba boca google video",
               "timedOut": null,
-              "duration": 4876,
+              "duration": 6687,
               "state": "passed",
-              "speed": "fast",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.visit('https://google.com');\ncy.get('.gLFyf').type('csgo moment{enter}');\ncy.contains('Video').click();",
               "err": {},
-              "uuid": "7c204c06-2529-44a8-a61d-cb66a79f755c",
-              "parentUUID": "ee1fc06e-6fd5-43e2-b490-0d191089b554",
+              "uuid": "ce2b1add-82e8-4e27-a8c0-1a83bbd497a5",
+              "parentUUID": "7d4db2b6-092b-418a-8bfe-845d3c302b51",
               "isHook": false,
               "skipped": false
             },
@@ -114,7 +114,7 @@
               "title": "test login github",
               "fullTitle": "test coba boca test login github",
               "timedOut": null,
-              "duration": 60190,
+              "duration": 60285,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -127,22 +127,41 @@
                 "estack": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (https://github.com/__cypress/runner/cypress_runner.js:155461:74)\n    at https://github.com/__cypress/runner/cypress_runner.js:156680:16\n    at tryCatcher (https://github.com/__cypress/runner/cypress_runner.js:13012:23)\n    at https://github.com/__cypress/runner/cypress_runner.js:8134:41\n    at tryCatcher (https://github.com/__cypress/runner/cypress_runner.js:13012:23)\n    at Promise._settlePromiseFromHandler (https://github.com/__cypress/runner/cypress_runner.js:10947:31)\n    at Promise._settlePromise (https://github.com/__cypress/runner/cypress_runner.js:11004:18)\n    at Promise._settlePromise0 (https://github.com/__cypress/runner/cypress_runner.js:11049:10)\n    at Promise._settlePromises (https://github.com/__cypress/runner/cypress_runner.js:11125:18)\n    at _drainQueueStep (https://github.com/__cypress/runner/cypress_runner.js:7719:12)\n    at _drainQueue (https://github.com/__cypress/runner/cypress_runner.js:7712:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://github.com/__cypress/runner/cypress_runner.js:7728:5)\n    at Async.drainQueues (https://github.com/__cypress/runner/cypress_runner.js:7598:14)\nFrom Your Spec Code:\n    at Context.eval (https://github.com/__cypress/tests?p=cypress/e2e/test.cy.js:106:8)",
                 "diff": null
               },
-              "uuid": "5f02e5f0-eede-48d9-ba2d-11af370af86c",
-              "parentUUID": "ee1fc06e-6fd5-43e2-b490-0d191089b554",
+              "uuid": "bb6eac07-0255-411e-a2d1-38eb623bde03",
+              "parentUUID": "7d4db2b6-092b-418a-8bfe-845d3c302b51",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "google video 2",
+              "fullTitle": "test coba boca google video 2",
+              "timedOut": null,
+              "duration": 5896,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://google.com');\ncy.get('.gLFyf').type('dota 2 the international best moment{enter}');\ncy.contains('Video').click();",
+              "err": {},
+              "uuid": "9dd202bb-35df-48a6-a68a-0cf072bbaea8",
+              "parentUUID": "7d4db2b6-092b-418a-8bfe-845d3c302b51",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "7c204c06-2529-44a8-a61d-cb66a79f755c"
+            "ce2b1add-82e8-4e27-a8c0-1a83bbd497a5",
+            "9dd202bb-35df-48a6-a68a-0cf072bbaea8"
           ],
           "failures": [
-            "5f02e5f0-eede-48d9-ba2d-11af370af86c"
+            "bb6eac07-0255-411e-a2d1-38eb623bde03"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 65066,
+          "duration": 72868,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

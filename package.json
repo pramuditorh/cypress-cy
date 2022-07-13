@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/main.js",
     "cy:open": "cypress open",
     "cy:run": "cypress run --reporter mochawesome --reporter-options reportDir=\"cypress/results\",overwrite=false,html=false,json=true"
   },
