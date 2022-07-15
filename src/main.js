@@ -1,11 +1,10 @@
-const cp=require('child_process');
+const express=require('express');
+const app=express();
+const routes=require('./routes');
+const PORT=3000;
 
-try {
-    cp.execSync('rm -rf cypress/results', {encoding: 'utf-8'});
-    cp.execSync('rm output.json', {encoding: 'utf-8'});
-    cp.execSync('npm run cy:run', {encoding: 'utf-8'});
-} catch(error) {
-    console.log(error)
-} finally {
-    cp.execSync('npx mochawesome-merge ./cypress/results/*.json -o output.json', {encoding: 'utf-8'});
-}
+app.use(routes);
+
+app.listen(PORT, () => {
+    console.log(`Example app listening on port ${PORT}`);
+});

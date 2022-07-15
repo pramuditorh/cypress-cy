@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 1,
-    "start": "2022-07-13T07:51:20.694Z",
-    "end": "2022-07-13T07:52:44.356Z",
-    "duration": 74813,
+    "start": "2022-07-15T06:42:30.158Z",
+    "end": "2022-07-15T06:44:04.376Z",
+    "duration": 81215,
     "testsRegistered": 4,
     "passPercent": 75,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "5044d3fc-9ffe-4cd2-98be-83b8819a6f0e",
+      "uuid": "5b2a4e36-42c9-41dd-85b9-e3a16eb23105",
       "title": "",
       "fullFile": "cypress/e2e/spec.cy.js",
       "file": "cypress/e2e/spec.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "bbea344b-3e84-42c6-a515-8670a0f79598",
+          "uuid": "3b60689a-b314-4419-a822-a4f3fefdb201",
           "title": "empty spec",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "passes",
               "fullTitle": "empty spec passes",
               "timedOut": null,
-              "duration": 1945,
+              "duration": 1976,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit('https://example.cypress.io');",
               "err": {},
-              "uuid": "aba6f276-dacc-4382-8d8b-7a1130f027f9",
-              "parentUUID": "bbea344b-3e84-42c6-a515-8670a0f79598",
+              "uuid": "7b7edea7-97ab-4fb3-970b-afe31d1ece41",
+              "parentUUID": "3b60689a-b314-4419-a822-a4f3fefdb201",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "aba6f276-dacc-4382-8d8b-7a1130f027f9"
+            "7b7edea7-97ab-4fb3-970b-afe31d1ece41"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1945,
+          "duration": 1976,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -76,7 +76,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "4143ac46-6eac-498d-843a-9d7f967a8e53",
+      "uuid": "fa870553-d005-45be-a967-da002aec5e22",
       "title": "",
       "fullFile": "cypress/e2e/test.cy.js",
       "file": "cypress/e2e/test.cy.js",
@@ -85,7 +85,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "7d4db2b6-092b-418a-8bfe-845d3c302b51",
+          "uuid": "4ab1daf6-9680-497f-bff0-8653dcdfbdb9",
           "title": "test coba boca",
           "fullFile": "",
           "file": "",
@@ -96,7 +96,7 @@
               "title": "google video",
               "fullTitle": "test coba boca google video",
               "timedOut": null,
-              "duration": 6687,
+              "duration": 9668,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -105,8 +105,8 @@
               "context": null,
               "code": "cy.visit('https://google.com');\ncy.get('.gLFyf').type('csgo moment{enter}');\ncy.contains('Video').click();",
               "err": {},
-              "uuid": "ce2b1add-82e8-4e27-a8c0-1a83bbd497a5",
-              "parentUUID": "7d4db2b6-092b-418a-8bfe-845d3c302b51",
+              "uuid": "3fbb5424-727b-4087-929e-d7298d10c5fe",
+              "parentUUID": "4ab1daf6-9680-497f-bff0-8653dcdfbdb9",
               "isHook": false,
               "skipped": false
             },
@@ -114,7 +114,7 @@
               "title": "test login github",
               "fullTitle": "test coba boca test login github",
               "timedOut": null,
-              "duration": 60285,
+              "duration": 60601,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -127,8 +127,8 @@
                 "estack": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (https://github.com/__cypress/runner/cypress_runner.js:155461:74)\n    at https://github.com/__cypress/runner/cypress_runner.js:156680:16\n    at tryCatcher (https://github.com/__cypress/runner/cypress_runner.js:13012:23)\n    at https://github.com/__cypress/runner/cypress_runner.js:8134:41\n    at tryCatcher (https://github.com/__cypress/runner/cypress_runner.js:13012:23)\n    at Promise._settlePromiseFromHandler (https://github.com/__cypress/runner/cypress_runner.js:10947:31)\n    at Promise._settlePromise (https://github.com/__cypress/runner/cypress_runner.js:11004:18)\n    at Promise._settlePromise0 (https://github.com/__cypress/runner/cypress_runner.js:11049:10)\n    at Promise._settlePromises (https://github.com/__cypress/runner/cypress_runner.js:11125:18)\n    at _drainQueueStep (https://github.com/__cypress/runner/cypress_runner.js:7719:12)\n    at _drainQueue (https://github.com/__cypress/runner/cypress_runner.js:7712:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://github.com/__cypress/runner/cypress_runner.js:7728:5)\n    at Async.drainQueues (https://github.com/__cypress/runner/cypress_runner.js:7598:14)\nFrom Your Spec Code:\n    at Context.eval (https://github.com/__cypress/tests?p=cypress/e2e/test.cy.js:106:8)",
                 "diff": null
               },
-              "uuid": "bb6eac07-0255-411e-a2d1-38eb623bde03",
-              "parentUUID": "7d4db2b6-092b-418a-8bfe-845d3c302b51",
+              "uuid": "614a6dd9-b3e1-4338-971d-7112e524f04c",
+              "parentUUID": "4ab1daf6-9680-497f-bff0-8653dcdfbdb9",
               "isHook": false,
               "skipped": false
             },
@@ -136,7 +136,7 @@
               "title": "google video 2",
               "fullTitle": "test coba boca google video 2",
               "timedOut": null,
-              "duration": 5896,
+              "duration": 8970,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -145,23 +145,23 @@
               "context": null,
               "code": "cy.visit('https://google.com');\ncy.get('.gLFyf').type('dota 2 the international best moment{enter}');\ncy.contains('Video').click();",
               "err": {},
-              "uuid": "9dd202bb-35df-48a6-a68a-0cf072bbaea8",
-              "parentUUID": "7d4db2b6-092b-418a-8bfe-845d3c302b51",
+              "uuid": "a335ece4-ffaa-4202-b20f-f89cb0cad076",
+              "parentUUID": "4ab1daf6-9680-497f-bff0-8653dcdfbdb9",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ce2b1add-82e8-4e27-a8c0-1a83bbd497a5",
-            "9dd202bb-35df-48a6-a68a-0cf072bbaea8"
+            "3fbb5424-727b-4087-929e-d7298d10c5fe",
+            "a335ece4-ffaa-4202-b20f-f89cb0cad076"
           ],
           "failures": [
-            "bb6eac07-0255-411e-a2d1-38eb623bde03"
+            "614a6dd9-b3e1-4338-971d-7112e524f04c"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 72868,
+          "duration": 79239,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
