@@ -26,6 +26,7 @@
     "mochawesome-report-generator": "^6.2.0"
   },
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "mustache": "^4.2.0"
   }
 }

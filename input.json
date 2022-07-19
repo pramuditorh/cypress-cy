@@ -1,0 +1,78 @@
+[
+  {
+    "title": "test coba coab",
+    "tasks": [
+      {
+        "name": "google video",
+        "steps": [
+          {
+            "commands": [
+              {
+                "visit": {
+                  "url": "https://google.com"
+                }
+              }
+            ]
+          },
+          {
+            "commands": [
+              {
+                "get": {
+                  "selector": ".gLFyf"
+                }
+              },
+              {
+                "type": {
+                  "text": "csgo moment",
+                  "sequence": "{enter}"
+                }
+              }
+            ]
+          },
+          {
+            "commands": [
+              {
+                "contains": {
+                  "selector": "Video"
+                }
+              },
+              {
+                "click": {
+                  "click": true
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "test login github",
+        "steps": [
+          {
+            "commands": [
+              {
+                "visit": {
+                  "url": "https://github.com"
+                }
+              }
+            ]
+          },
+          {
+            "commands": [
+              {
+                "contains": {
+                  "selector": "Sign up"
+                }
+              },
+              {
+                "click": {
+                  "click": true
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,4 +1,6 @@
 const cp=require('child_process');
+const fs=require('fs');
+const Mustache=require('mustache');
 
 const testSvc=(req, res) => {
     res.send('Im testSvc');
@@ -18,4 +20,12 @@ const runCypressSvc=(req, res) => {
     res.send('Run Cypress Done');
 };
 
-module.exports={testSvc, runCypressSvc};
+const generateTemplate=() => {
+    const templateFile=fs.readFileSync('./template.txt');
+    const jsonFile=fs.readFileSync('./input.json');
+    const jsonData=JSON.parse(jsonFile);
+    //const mustache=Mustache.render(templateFile, jsonData[0]);
+    console.log(typeof(templateFile));
+};
+
+module.exports={testSvc, runCypressSvc, generateTemplate};
