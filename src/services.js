@@ -24,8 +24,13 @@ const generateTemplate=() => {
     const templateFile=fs.readFileSync('./template.txt');
     const jsonFile=fs.readFileSync('./input.json');
     const jsonData=JSON.parse(jsonFile);
-    //const mustache=Mustache.render(templateFile, jsonData[0]);
-    console.log(typeof(templateFile));
+    const mustache=Mustache.render(templateFile.toString(), jsonData[0]);
+
+    try {
+        fs.writeFileSync('./cypress/e2e/generated.cy.js', mustache);
+    } catch(error) {
+        console.log(error);
+    }
 };
 
 module.exports={testSvc, runCypressSvc, generateTemplate};

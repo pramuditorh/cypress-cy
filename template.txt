@@ -1,0 +1,28 @@
+describe('{{title}}', () => {
+{{#tasks}}
+  it('{{name}}', () => {
+    {{#steps}}
+      {{#commands}}
+        {{#visit}}
+          cy.visit('{{{url}}}')
+        {{/visit}}
+        {{#get}}
+          {{#type}}
+          cy.get('{{selector}}').type('{{text}}{{{sequence}}}')
+          {{/type}}
+        {{/get}}
+        {{#get}}
+          {{#click}}
+          cy.get('{{selector}}').click()
+          {{/click}}
+        {{/get}}
+        {{#contains}}
+          {{#click}}
+          cy.contains('{{selector}}').click()
+          {{/click}}
+        {{/contains}}
+      {{/commands}}
+    {{/steps}}
+  })
+{{/tasks}}
+})

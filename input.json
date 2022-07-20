@@ -18,13 +18,11 @@
             "commands": [
               {
                 "get": {
-                  "selector": ".gLFyf"
-                }
-              },
-              {
-                "type": {
-                  "text": "csgo moment",
-                  "sequence": "{enter}"
+                  "selector": ".gLFyf",
+                  "type": {
+                    "text": "csgo moment",
+                    "sequence": "{enter}"
+                  }
                 }
               }
             ]
@@ -33,11 +31,7 @@
             "commands": [
               {
                 "contains": {
-                  "selector": "Video"
-                }
-              },
-              {
-                "click": {
+                  "selector": "Video",
                   "click": true
                 }
               }
@@ -61,11 +55,72 @@
             "commands": [
               {
                 "contains": {
-                  "selector": "Sign up"
+                  "selector": "Sign up",
+                  "click": true
                 }
               },
               {
-                "click": {
+                "contains": {
+                  "selector": "Sign in",
+                  "click": true
+                }
+              },
+              {
+                "get": {
+                  "selector": "#login_field",
+                  "type": {
+                    "text": "pramuditorh"
+                  }
+                }
+              },
+              {
+                "get": {
+                  "selector": "#password",
+                  "type": {
+                    "text": "Doraguniru1234"
+                  }
+                }
+              },
+              {
+                "get": {
+                  "selector": ".btn",
+                  "click": true
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "google video 2",
+        "steps": [
+          {
+            "commands": [
+              {
+                "visit": {
+                  "url": "https://google.com"
+                }
+              }
+            ]
+          },
+          {
+            "commands": [
+              {
+                "get": {
+                  "selector": ".gLFyf",
+                  "type": {
+                    "text": "dota 2 the international best moment",
+                    "sequence": "{enter}"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "commands": [
+              {
+                "contains": {
+                  "selector": "Video",
                   "click": true
                 }
               }
